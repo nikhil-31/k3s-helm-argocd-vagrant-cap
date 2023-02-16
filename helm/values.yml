@@ -1,0 +1,25 @@
+## Provide the name of the namespace
+namespace:
+  name: sandbox
+service:
+  port: 4111
+  protocol: TCP
+  targetPort: 3111
+  type: ClusterIP
+image:
+  repository: nikhilsuper/techtrends
+  tag: 2
+  pullPolicy: IfNotPresent
+replicaCount: 1
+resources:
+  requests:
+    cpu: 250m
+    memory: 64Mi
+  limits:
+    cpu: 500m
+    memory: 128Mi
+containerPort: 3111
+livenessProbe:
+  path: /healthz
+readinessProbe:
+  path: /healthz
