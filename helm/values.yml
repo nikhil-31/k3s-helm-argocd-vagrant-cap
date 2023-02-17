@@ -7,7 +7,7 @@ service:
   targetPort: 3111
   type: ClusterIP
 image:
-  repository: nikhilsuper/techtrends
+  repository: "nikhilsuper/techtrends:"
   tag: 2
   pullPolicy: IfNotPresent
 replicaCount: 1

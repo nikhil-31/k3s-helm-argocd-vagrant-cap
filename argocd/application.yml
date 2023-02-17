@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: techtrends-kekw
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/nikhil-31/k3s-helm-argocd-vagrant-cap
+    targetRevision: HEAD
+    path: kubernetes
+  destination: 
+    server: https://kubernetes.default.svc
+    namespace: sandbox2
+
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+
+    automated:
+      selfHeal: true
+      prune: true
