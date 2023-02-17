@@ -2,7 +2,7 @@ namespace:
   name: staging
 service: 
   port: 5111
-replicaCount: 3
+replicaCount: 1
 resources: 
   requests: 
     memory: 90Mi
@@ -10,3 +10,12 @@ resources:
   limits: 
     memory: 128Mi
     cpu: 500m
+image:
+  repository: "nikhilsuper/techtrends:"
+  tag: 2
+  pullPolicy: Always
+livenessProbe:
+  path: /healthz
+readinessProbe:
+  path: /healthz
+containerPort: 3111
