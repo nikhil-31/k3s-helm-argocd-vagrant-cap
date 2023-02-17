@@ -3,6 +3,8 @@ namespace:
 service:
   port: 7111
 image:
+  repository: "nikhilsuper/techtrends:"
+  tag: 2
   pullPolicy: Always
 replicaCount: 5
 resources:
@@ -16,3 +18,4 @@ livenessProbe:
   path: /healthz
 readinessProbe:
   path: /healthz
+containerPort: 3111
