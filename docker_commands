@@ -8,23 +8,44 @@ docker run -d -p 7111:3111 techtrends:0
 docker logs -f ef602ae6424e
 
 ## Logs from the container running the TechTrends application
-
  * Serving Flask app 'app' (lazy loading)
  * Environment: production
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
  * Debug mode: on
- * Running on all addresses.
+[WARNING] 2023-02-18 11:25:15,469:  * Running on all addresses.
    WARNING: This is a development server. Do not use it in a production deployment.
- * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 136-009-452
-[2023-02-16 09:29:49,400] INFO in app: Metrics request successful
-[2023-02-16 09:29:49,400] INFO in app: db_connection_count: 0 and total_posts: 6
-172.17.0.1 - - [16/Feb/2023 09:29:49] "GET /metrics HTTP/1.1" 200 -
-[2023-02-16 09:30:01,762] INFO in app: Status request successful
-[2023-02-16 09:30:01,762] INFO in app: result: OK - healthy
-172.17.0.1 - - [16/Feb/2023 09:30:01] "GET /healthz HTTP/1.1" 200 -
-172.17.0.1 - - [16/Feb/2023 09:30:04] "GET / HTTP/1.1" 200 -
-172.17.0.1 - - [16/Feb/2023 09:30:04] "GET /static/css/main.css HTTP/1.1" 304 -
+[INFO] 2023-02-18 11:25:15,469:  * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+[WARNING] 2023-02-18 11:25:15,469:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[INFO] 2023-02-18 11:25:15,469:  * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+[INFO] 2023-02-18 11:25:15,470:  * Restarting with stat
+[INFO] 2023-02-18 11:25:15,470:  * Restarting with stat
+[WARNING] 2023-02-18 11:25:15,693:  * Debugger is active!
+[WARNING] 2023-02-18 11:25:15,693:  * Debugger is active!
+[INFO] 2023-02-18 11:25:15,694:  * Debugger PIN: 400-471-722
+[INFO] 2023-02-18 11:25:15,694:  * Debugger PIN: 400-471-722
+[INFO] 2023-02-18 11:26:09,170: Displaying the homepage
+[INFO] 2023-02-18 11:26:09,170: Displaying the homepage
+[INFO] 2023-02-18 11:26:09,183: 172.17.0.2 - - [18/Feb/2023 11:26:09] "GET / HTTP/1.1" 200 -
+[INFO] 2023-02-18 11:26:09,183: 172.17.0.2 - - [18/Feb/2023 11:26:09] "GET / HTTP/1.1" 200 -
+[INFO] 2023-02-18 11:26:16,569: Metrics request successful
+[INFO] 2023-02-18 11:26:16,569: db_connection_count: 1 and total_posts: 6
+[INFO] 2023-02-18 11:26:16,569: Metrics request successful
+[INFO] 2023-02-18 11:26:16,569: db_connection_count: 1 and total_posts: 6
+[INFO] 2023-02-18 11:26:16,571: 172.17.0.2 - - [18/Feb/2023 11:26:16] "GET /metrics HTTP/1.1" 200 -
+[INFO] 2023-02-18 11:26:16,571: 172.17.0.2 - - [18/Feb/2023 11:26:16] "GET /metrics HTTP/1.1" 200 -
+[INFO] 2023-02-18 11:26:31,101: Displaying the about page
+[INFO] 2023-02-18 11:26:31,101: Displaying the about page
+[INFO] 2023-02-18 11:26:31,104: 172.17.0.2 - - [18/Feb/2023 11:26:31] "GET /about HTTP/1.1" 200 -
+[INFO] 2023-02-18 11:26:31,104: 172.17.0.2 - - [18/Feb/2023 11:26:31] "GET /about HTTP/1.1" 200 -
+[INFO] 2023-02-18 11:27:11,495: Status request successful
+[INFO] 2023-02-18 11:27:11,495: result: OK - healthy
+[INFO] 2023-02-18 11:27:11,495: Status request successful
+[INFO] 2023-02-18 11:27:11,495: result: OK - healthy
+[INFO] 2023-02-18 11:27:11,496: 172.17.0.2 - - [18/Feb/2023 11:27:11] "GET /healthz HTTP/1.1" 200 -
+[INFO] 2023-02-18 11:27:11,496: 172.17.0.2 - - [18/Feb/2023 11:27:11] "GET /healthz HTTP/1.1" 200 -
+[INFO] 2023-02-18 11:27:30,293: POST "2020 CNCF Annual Report" retrieved!
+[INFO] 2023-02-18 11:27:30,293: POST "2020 CNCF Annual Report" retrieved!
+[INFO] 2023-02-18 11:27:30,297: 172.17.0.2 - - [18/Feb/2023 11:27:30] "GET /1 HTTP/1.1" 200 -
+[INFO] 2023-02-18 11:27:30,297: 172.17.0.2 - - [18/Feb/2023 11:27:30] "GET /1 HTTP/1.1" 200 -
