@@ -42,7 +42,7 @@ spec:
             httpGet:
               scheme: HTTP
               path: {{ .Values.readinessProbe.path }}
-              port: 3111
+              port: {{ .Values.containerPort }}
           livenessProbe:
             initialDelaySeconds: 1
             periodSeconds: 2
@@ -52,4 +52,4 @@ spec:
             httpGet:
               scheme: HTTP
               path: {{ .Values.livenessProbe.path }}
-              port: 3111
+              port: {{ .Values.containerPort }}
