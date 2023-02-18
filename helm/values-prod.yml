@@ -6,7 +6,7 @@ image:
   repository: "nikhilsuper/techtrends:"
   tag: 2
   pullPolicy: Always
-replicaCount: 2
+replicaCount: 5
 resources:
   requests:
     memory: 128Mi
